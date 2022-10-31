@@ -59,7 +59,7 @@ onMounted(() => {
   camera = new THREE.PerspectiveCamera(fov, width / height, near, far);
   camera.position.set(0, 0, 5);
   renderer.setSize(width, height);
-  renderer.setPixelRatio(2);
+//  renderer.setPixelRatio(2);
   renderer.shadowMap.enabled=true
   renderer.render(scene, camera);
   container.appendChild(renderer.domElement);
